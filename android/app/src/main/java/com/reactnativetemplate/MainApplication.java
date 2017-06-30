@@ -3,6 +3,7 @@ package com.reactnativetemplate;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
 import com.microsoft.codepush.react.CodePush;
 import com.reactnativenavigation.NavigationApplication;
@@ -17,6 +18,12 @@ import java.util.List;
 public class MainApplication extends NavigationApplication {
 
   // private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+
+    @Override
+    protected String getJSBundleFile() {
+      return CodePush.getJSBundleFile();
+    }
+
 
     @Override
     public boolean isDebug() {

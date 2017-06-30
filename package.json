@@ -6,14 +6,21 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
+  "rnpm": {
+    "assets": [
+      "./src/res/fonts"
+    ]
+  },
   "dependencies": {
     "apsl-react-native-button": "^3.0.2",
     "react": "16.0.0-alpha.12",
     "react-native": "0.45.1",
     "react-native-code-push": "^3.0.0-beta",
     "react-native-config": "^0.5.0",
+    "react-native-elements": "^0.13.0",
     "react-native-extended-stylesheet": "^0.5.0",
     "react-native-navigation": "^1.1.113",
+    "react-native-vector-icons": "^4.2.0",
     "react-redux": "^5.0.5",
     "redux": "^3.7.1",
     "redux-thunk": "^2.2.0"
