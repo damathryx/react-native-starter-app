@@ -1,6 +1,5 @@
 import * as Action from 'constants/actionTypes';
 import Config from 'react-native-config';
-import _ from 'lodash';
 
 export const initialState = {
     loading: false,
@@ -9,11 +8,12 @@ export const initialState = {
     baseUrl: Config.DEFAULT_APP_URL
 };
 
-
 export const reducer = (state = initialState, action = {}) => {
     switch (action.type) {
         case Action.LOGIN: {
-
+            return Object.assign({}, state, {
+                loggedIn: true,
+            });
         }
     }
 }

@@ -32,11 +32,7 @@ Navigation.startSingleScreenApp({
         navigatorStyle: {
             navBarHidden: true,
             navBarHideOnScroll: false,
-            navBarBackgroundColor: '#e92522', // This will be the TitleBars color when the react view is hidden and collapsed
-            navBarTranslucent: false, // Optional, sets a translucent dark background to the TitleBar. Useful when displaying bright colored header to emphasize the title and buttons in the TitleBar
             showTitleWhenExpended: false, // default: true. Show the screens title only when the toolbar is collapsed
-            collapsingToolBarCollapsedColor: 'green', // optional. The TitleBar (navBar) color in collapsed state
-            collapsingToolBarExpendedColor: 'red'
         }, // override the navigator style for the screen, see "Styling the navigator" below (optional)
         navigatorButtons: {} // override the nav buttons for the screen, see "Adding buttons to the navigator" below (optional)
     },

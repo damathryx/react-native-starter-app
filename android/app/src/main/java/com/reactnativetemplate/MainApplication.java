@@ -20,12 +20,6 @@ public class MainApplication extends NavigationApplication {
   // private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
 
     @Override
-    protected String getJSBundleFile() {
-      return CodePush.getJSBundleFile();
-    }
-
-
-    @Override
     public boolean isDebug() {
         return BuildConfig.DEBUG;
     }
